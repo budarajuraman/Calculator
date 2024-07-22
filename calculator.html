@@ -6,87 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
-        .container {
-            height: 330px;
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            width: max-content;
-            margin: 190px auto;
-            border-radius: 20px;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-
-        #size {
-            height: 53px;
-        }
-
-        input[type="text"] {
-            border: 2px solid black;
-            border-radius: 8px;
-            width: 165px;
-            font-weight: bolder;
-            background-color: rgb(211, 206, 199);
-            text-align: center;
-            padding: 5px;
-        }
-
-        .button {
-            cursor: pointer;
-            padding: 5px 10px;
-            margin: 2px 6px;
-            font-size: large;
-            border: 2px solid black;
-            border-radius: 5px;
-            width: fit-content;
-        }
-
         body {
-            background: linear-gradient(to right, #454341, #a3a271, #995847);
-        }
+    background: linear-gradient(to right, #454341, #a3a271, #995847);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .row {
-            display: flex;
-            padding: 8px;
-        }
+.container {
+    height: 330px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
-        /* Media Queries */
+#size {
+    height: 53px;
+}
 
-        @media (max-width: 1200px) {
-            .container {
-                margin-top: 100px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
+input[type="text"] {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 165px;
+    font-weight: bolder;
+    background-color: rgb(211, 206, 199);
+    text-align: center;
+    padding: 5px;
+}
 
-        @media (max-width: 750px) {
-            .container {
-                width: 90%;
-                margin: 50px auto;
-            }
+.button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 2px 6px;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
 
-            .button {
-                font-size: medium;
-            }
+.row {
+    display: flex;
+    padding: 8px;
+}
 
-            input[type="text"] {
-                width: 100%;
-                font-size: 16px;
-            }
+/* Media Queries */
 
-            .row {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 auto;
+    }
+}
 
-            .row button {
-                flex: 1 1 20%;
-                margin: 5px;
-            }
-        }
+@media (max-width: 750px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .button {
+        font-size: medium;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row button {
+        flex: 1 1 20%;
+        margin: 5px;
+    }
+}
+@media (max-height: 400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+        
+           
+       
+            
     </style>
 </head>
 <body>
