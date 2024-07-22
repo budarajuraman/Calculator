@@ -7,7 +7,6 @@
     <title>Calculator</title>
     <style>
         body {
-    background: linear-gradient(to right, #454341, #a3a271, #995847);
     margin: 0;
     display: flex;
     justify-content: center;
@@ -60,7 +59,33 @@ input[type="text"] {
 
 @media (max-width: 1200px) {
     .container {
+        width: 80%;
         margin: 0 auto;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .button {
+        font-size: medium;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        width: 70%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: medium;
+        padding: 8px 15px;
     }
 }
 
@@ -70,13 +95,14 @@ input[type="text"] {
         margin: 0 auto;
     }
 
-    .button {
-        font-size: medium;
-    }
-
     input[type="text"] {
         width: 100%;
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: small;
+        padding: 6px 12px;
     }
 
     .row {
@@ -106,7 +132,6 @@ input[type="text"] {
     }
 }
 
-        
            
        
             
